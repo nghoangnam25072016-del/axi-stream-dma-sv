@@ -1,0 +1,18 @@
+# Simulator output
+sim/build/
+work/
+transcript
+vsim.wlf
+*.vcd
+*.fst
+*.log
+*.key
+csrc/
+simv
+simv.daidir/
+xcelium.d/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
