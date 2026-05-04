@@ -47,14 +47,16 @@ The design was compiled and simulated on EDA Playground using QuestaSim.
 - Testbench: self-checking randomized SystemVerilog testbench
 - Waveform: generated using VCD / EPWav
 
-![DMA Basic Transfer Waveform](sim/simulation_pass_log.png)
+![DMA Basic Transfer Test](sim/simulation_pass_log.png)
 
 
 
 ### Basic DMA Transfer Waveform
 
 Waveform showing a programmed AXI-Stream DMA transfer with `length = 0x10`. The `start_pulse` initiates the transfer, `busy` stays asserted during streaming, `delivered_count` increments for each successful ready/valid handshake, and `done` asserts after all 16 beats are transferred with `error = 0`.
-sim/simulation_pass_log.png
+
+![DMA Basic Transfer Waveform](sim/dma_basic_transfer_waveform.png.png)
+
 
 Designed and verified a SystemVerilog AXI4-Lite controlled AXI-Stream DMA engine with ready/valid flow control, transfer length tracking, busy/done status logic, scoreboard-based checking, and passing QuestaSim simulation.
 
